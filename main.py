@@ -40,27 +40,29 @@ def draw_result(image, template, path):
     if position:
         x, y = position
         im = cv2.rectangle(image, position, (x + template.shape[1], y + template.shape[0]), (0, 255, 0), 2)
-        cv2.imwrite(path.replace('start', 'rect'), im)
+        cv2.imwrite(path, im)
     else:
         print("Шаблон не найден.")
 
-start_images_1 = ["images\start\cats.png", "images\start\cbee.png", "images\start\city.png", "images\start\hello.png",
-                  "images\start\planet.png"]
-cut_images = ["images\cut\cats.png", "images\cut\cbee.png","images\cut\city.png", "images\cut\hello.png",
-              "images\cut\planet.png"]
 
-start_images_2 = ["images\start\house.png", "images\start\most.png", "images\start\pumpkin.png",
+start_images = ["images\start\cats.png", "images\start\cbee.png", "images\start\city.png", "images\start\hello.png",
+                  "images\start\planet.png", "images\start\house.png", "images\start\most.png", "images\start\pumpkin.png",
                   "images\start\crobot.png", "images\start\map.png"]
 
-prework_images = ["images\prework\house.png", "images\prework\most.png", "images\prework\pumpkin.png",
+cut_images = ["images\cut\cats.png", "images\cut\cbee.png", "images\cut\city.png", "images\cut\hello.png",
+                  "images\cut\planet.png", "images\cut\house.png", "images\cut\most.png", "images\cut\pumpkin.png",
+                  "images\cut\crobot.png", "images\cut\map.png"]
+
+prework_images = ["images\prework\cats.png", "images\prework\cbee.png", "images\prework\city.png", "images\prework\hello.png",
+                  "images\prework\planet.png", "images\prework\house.png", "images\prework\most.png", "images\prework\pumpkin.png",
                   "images\prework\crobot.png", "images\prework\map.png"]
 
-for i in range(5):
-    image = cv2.imread(start_images_1[i])
+for i in range(10):
+    image = cv2.imread(start_images[i])
     template = cv2.imread(cut_images[i])
-    draw_result(image, template, start_images_1[i])
+    draw_result(image, template, start_images[i].replace('start', 'rect_cut'))
 
-for j in range(5):
-    image = cv2.imread(start_images_2[j])
+for j in range(10):
+    image = cv2.imread(start_images[j])
     template = cv2.imread(prework_images[j])
-    draw_result(image, template, start_images_2[j])
+    draw_result(image, template, start_images[j].replace('start', 'rect_prework'))

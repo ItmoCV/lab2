@@ -50,7 +50,7 @@ cut_images = ["images\cut\cats.png", "images\cut\cbee.png","images\cut\city.png"
               "images\cut\planet.png"]
 
 start_images_2 = ["images\start\house.png", "images\start\most.png", "images\start\pumpkin.png",
-                  "images\start\crobot.png", "images\prework\map.png"]
+                  "images\start\crobot.png", "images\start\map.png"]
 
 prework_images = ["images\prework\house.png", "images\prework\most.png", "images\prework\pumpkin.png",
                   "images\prework\crobot.png", "images\prework\map.png"]

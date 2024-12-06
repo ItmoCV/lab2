@@ -63,10 +63,12 @@ x = list(metric_prework.keys())
 y = list(metric_prework.values())
 
 plt.bar(height=y, x=x)
+plt.xticks(rotation=45)
 plt.show()
 
 x = list(metric_cut.keys())
 y = list(metric_cut.values())
 
 plt.bar(height=y, x=x)
+plt.xticks(rotation=45)
 plt.show()

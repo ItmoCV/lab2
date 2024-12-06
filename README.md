@@ -83,7 +83,7 @@
 3.06 секунды
 
 ## Выводы по работе
-# Template_matching
+### Template_matching
 Метрика IoU работы template_matching по обрезанным изображениям ![image](https://github.com/user-attachments/assets/b986924d-d831-47c0-a544-0df2bf738d9b)
 
 Средняя метрика IoU работы template_matching по обрезанным изображениям составляет 1.0
@@ -92,7 +92,7 @@
 
 Средняя метрика IoU работы template_matching по измененным изображениям составляет 0.9
 
-# Поиск ключевых точек
+### Поиск ключевых точек
 Метрика IoU работы sift.py по обрезанным и измененным изображениям (идентична) ![](./readme_img/chart1.png)
 
 Средняя метрика IoU работы sift.py по составляет 0.34

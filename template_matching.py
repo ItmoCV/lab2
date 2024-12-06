@@ -109,17 +109,17 @@ for coord in coord_prework:
     name_prework.append(coord[4])
 
 
-pd.DataFrame({'name_cut': name_cut,
-              'x_min_cut': x_min_cut,
-              'y_min_cut': y_min_cut,
-              'x_max_cut': x_max_cut,
-              'y_max_cut': y_max_cut}).to_excel(r"metrics\template_matching\coord_cut.xlsx")
+pd.DataFrame({'name': name_cut,
+              'x_min': x_min_cut,
+              'y_min': y_min_cut,
+              'x_max': x_max_cut,
+              'y_max': y_max_cut}).to_excel(r"metrics\template_matching\coord_cut.xlsx")
 
-pd.DataFrame({'name_prework': name_prework,
-              'x_min_prework': x_min_prework,
-              'y_min_prework': y_min_prework,
-              'x_max_prework': x_max_prework,
-              'y_max_prework': y_max_prework}).to_excel(r"metrics\template_matching\coord_prework.xlsx")
+pd.DataFrame({'name': name_prework,
+              'x_min': x_min_prework,
+              'y_min': y_min_prework,
+              'x_max': x_max_prework,
+              'y_max': y_max_prework}).to_excel(r"metrics\template_matching\coord_prework.xlsx")
 
 end_time = time.time()
 execution_time = end_time - start_time

@@ -43,7 +43,7 @@
 ![](./readme_img/orig.png)
 
 Результат работы алгоритма на обрезанных изображениях:
-![](./readme_img/result_cut.png)
+![image](https://github.com/user-attachments/assets/2e63a53e-fe58-498a-a5e8-4d6eae9c25bf)
 
 Результат работы алгоритма на измененных изображениях:
 ![](./readme_img/result_prework.png)

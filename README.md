@@ -54,7 +54,7 @@
 ### Поиск ключевых точек эталона на входном изображении (с помощью SIFT)
 
 Изображения шаблоны приведены ниже:
-![](./readme_img/templ.png)
+![](./readme_img/temp.png)
 
 Изображения, на которых осуществлялся поиск:
 ![](./readme_img/orig.png)
@@ -66,7 +66,14 @@
 ВСТАВИТЬ!!!!
 
 ## Выводы по работе
-ВСТАВИТЬ!!!! ПОСЛЕ ТОГО КАК ПОЯВЯТСЯ ГРАФИКИ!!!!!!!
+Метрика IoU работы template_matching по обрезанным изображениям ![image](https://github.com/user-attachments/assets/b986924d-d831-47c0-a544-0df2bf738d9b)
+
+Средняя метрика IoU работы template_matching по обрезанным изображениям составляет 1.0
+
+Метрика IoU работы template_matching по измененным изображениям ![image](https://github.com/user-attachments/assets/717b9459-8baf-4d65-82f7-d17cd57bc7b2)
+
+Средняя метрика IoU работы template_matching по измененным изображениям составляет 0.9
+
 
 ## Использованные источники
 1. Документация OpenCV: https://docs.opencv.org/

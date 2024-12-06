@@ -12,7 +12,7 @@ def distance(point1, point2):
 def find_template(template_path, img_path):
     template = cv.imread(template_path)
     image = cv.imread(img_path)
-    # ЗасЕряем
+
     gray_template = cv.cvtColor(template, cv.COLOR_BGR2GRAY)
     gray_image = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 

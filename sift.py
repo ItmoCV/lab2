@@ -2,6 +2,9 @@ import cv2 as cv
 import numpy as np
 import os
 import pandas as pd
+from time import time
+
+start = time()
 
 def distance(point1, point2):
     return np.sqrt((point2[0] - point1[0])**2 + (point2[1] - point1[1])**2)
@@ -143,3 +146,6 @@ if __name__ == "__main__":
                 'y_min': y_min_prework,
                 'x_max': x_max_prework,
                 'y_max': y_max_prework}).to_excel(r"metrics/sift/coord_prework.xlsx")
+    
+    end = time()
+    print(f'Время работы программы: {np.round(end - start, 2)} сек.')

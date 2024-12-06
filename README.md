@@ -46,7 +46,7 @@
 ![](./readme_img/result_cut.png)
 
 Результат работы алгоритма на измененных изображениях:
-![](./readme_img/result_cut.png)
+![](./readme_img/result_prework.png)
 
 Время работы программы:
 12.0 минут
